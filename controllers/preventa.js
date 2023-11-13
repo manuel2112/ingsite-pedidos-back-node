@@ -1,5 +1,5 @@
 const {response} = require('express');
-const { Op, Sequelize } = require("sequelize");
+const { Op } = require("sequelize");
 const { Preventa } = require('../models/Preventa');
 const { Parametro } = require('../models/Parameter');
 const { Detpreventa } = require('../models/Detpreventa');

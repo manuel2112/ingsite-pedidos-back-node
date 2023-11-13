@@ -5,19 +5,17 @@ const db = new Sequelize(process.env.BD_DATABASE, process.env.BD_USER, process.e
         port: process.env.BD_PORT,
         dialect: 'mysql',
         define: {
-        timestamps: false
-    },
-    pool : {
-        max:5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000,
-    },
-    timezone: 'America/Santiago',
-    dialectOptions: {
-        timezone: 'local',
+            timestamps: false
+        },
+        pool : {
+            max:5,
+            min: 0,
+            acquire: 30000,
+            idle: 10000,
+        },
+        timezone: 'America/Santiago',
     }
-});
+);
 
 // db.authenticate().then(() => {
 //     console.log(`Connection has been established successfully to ${process.env.BD_DATABASE}`);

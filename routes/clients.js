@@ -3,15 +3,19 @@
  */
 
 const express = require('express');
-const { check } = require('express-validator');
 const router = express.Router();
-const { validarCampos } = require('../middlewares/validar-campos');
-const { getClients } = require('../controllers/clients');
-
+const { validarJWT } = require('../middlewares/validar-jwt');
+const { getClients, insertClient } = require('../controllers/clients');
 
 router.get(
     '/',
     getClients 
+);
+
+router.post(
+    '/',
+    validarJWT,
+    insertClient 
 );
 
 

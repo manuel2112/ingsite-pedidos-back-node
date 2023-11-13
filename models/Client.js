@@ -5,75 +5,76 @@ const Cliente =  db.define( 'clientes', {
     clientes_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
+        autoIncrement: true,
         allowNull: false,
     },
     empresas_id: {        
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     clientes_flag: {        
         type: DataTypes.BOOLEAN,
-        allowNull: false
+        allowNull: true
     },
     rut: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     codigo: {        
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     razon: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     giro: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     direccion: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     ciudad: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     comuna: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     fono1: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     credito: {        
         type: DataTypes.BOOLEAN,
-        allowNull: false
+        allowNull: true
     },
     credito_monto: {        
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     atencion: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     precio_esp: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     cliente_email: {        
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     cliente_listaprecios: {        
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     precios_neto: {        
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
 },{
     tableName: 'clientes'
